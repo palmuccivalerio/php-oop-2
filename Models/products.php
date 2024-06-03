@@ -1,9 +1,9 @@
 <?php
 class Prodotto {
-    private $titolo;
-    private $prezzo;
-    private $immagine;
-    private $tipo;
+    protected $titolo;
+    protected $prezzo;
+    protected $immagine;
+    protected $tipo;
 
     public function __construct($titolo, $prezzo, $immagine, $tipo) {
         $this->titolo = $titolo;
@@ -24,8 +24,14 @@ class Prodotto {
         return $this->immagine;
     }
 
-
     public function getTipo() {
         return $this->tipo;
     }
 }
+?>
+
+
+<!-- 
+Categorie: Definiscono il tipo di animali (Cani, Gatti).
+Prodotti: Oggetti che rappresentano i prodotti venduti, con dettagli come titolo, prezzo, immagine, e categoria.
+Sottoclassi: Rappresentano tipi specifici di prodotti (Cibo, Gioco, Cuccia). -->
