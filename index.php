@@ -11,7 +11,7 @@ $cuccia = new Cuccia('cuccia', 70, 'path', 'gatto');
 
 $gioco->setMateriale('Plastica');
 $cibo->setScadenza('2024-06-01');
-$cuccia->setDimensione('10m x 5m');
+$cuccia->setDimensione(50);
 
 
 var_dump($cibo->isScaduto());
